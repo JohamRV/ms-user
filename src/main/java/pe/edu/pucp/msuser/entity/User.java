@@ -25,7 +25,7 @@ public class User {
     @NotNull(message = "The name must not be null.")
     @NotBlank(message = "The name must not be empty.")
     @Size(max = 45, message = "The name must not be more than 45 characters.")
-    private String name;
+    private String firstname;
 
     @Basic
     @Column(name = "LASTNAME")

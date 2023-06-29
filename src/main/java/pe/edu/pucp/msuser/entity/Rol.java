@@ -18,7 +18,7 @@ public class Rol {
 
     @Basic
     @Column(name = "NAME")
-    private String name;
+    private String rolName;
 
     @Basic
     @Column(name = "DESCRIPTION")
