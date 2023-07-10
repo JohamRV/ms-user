@@ -10,7 +10,5 @@ public interface UserSummaryDto {
     @Value("#{@mapperUtility.buildRolDto(target.rolId, target.rolName)}")
     RolDto getRol();
 
-    @Value("#{@mapperUtility.buildCredentialDto(target.password)}")
-    CredentialDto getCredential();
 
 }

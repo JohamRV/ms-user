@@ -17,10 +17,9 @@ public interface UserRepository extends JpaRepository<User, Integer> {
             " u.EMAIL as 'email',\n" +
             " r.ROL_ID as 'rolId',\n" +
             " r.NAME as 'rolName',\n" +
-            " c.PASSWORD as 'password'\n" +
-            "FROM pucp_stack.pstk_user u\n" +
-            "INNER JOIN pucp_stack.pstk_credential c ON c.CREDENTIAL_ID = u.FK_CREDENTIAL_ID\n" +
-            "INNER JOIN pucp_stack.pstk_rol r ON r.ROL_ID = u.FK_ROL_ID;", nativeQuery = true)
+            " u.PASSWORD as 'password'\n" +
+            "FROM pucp_stack.PSTK_USER u\n" +
+            "INNER JOIN pucp_stack.PSTK_ROL r ON r.ROL_ID = u.FK_ROL_ID;", nativeQuery = true)
     List<UserSummaryDto> findAllUserSummary();
 
 

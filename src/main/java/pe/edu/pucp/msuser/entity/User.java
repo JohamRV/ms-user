@@ -42,6 +42,12 @@ public class User {
     private String email;
 
     @Basic
+    @Column(name = "PASSWORD")
+    @NotNull(message = "The email must not be null.")
+    @NotBlank(message = "The email must not be empty.")
+    private String password;
+
+    @Basic
     @Column(name = "DESCRIPTION")
     @Size(max = 255, message = "The description must not be more than 255 characters.")
     private String description;
@@ -55,10 +61,5 @@ public class User {
     @Column(name = "FK_SLICE_ID")
     @JsonIgnore
     private Integer sliceId;
-
-    @Basic
-    @Column(name = "FK_CREDENTIAL_ID")
-    @JsonIgnore
-    private Integer credentialId;
 
 }

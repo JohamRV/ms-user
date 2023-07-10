@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "pstk_rol", schema = "pucp_stack")
+@Table(name = "PSTK_ROL", schema = "pucp_stack")
 public class Rol {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

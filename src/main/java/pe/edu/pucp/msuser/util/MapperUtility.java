@@ -24,10 +24,4 @@ public class MapperUtility {
         return rolDto;
     }
 
-    public CredentialDto buildCredentialDto(String password) {
-        CredentialDto credentialDto = new CredentialDto();
-        credentialDto.setPassword(password);
-        return credentialDto;
-    }
-
 }
